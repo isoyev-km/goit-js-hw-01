@@ -3,14 +3,11 @@
 const credits = 23580;
 const pricePerDroid = 3000;
 
-let totalPrice;
-let moneyLeft;
-
 let amountOfDroids = prompt('Сколько дроидов вы хотите приобрести?');
+const totalPrice = amountOfDroids * pricePerDroid;
+
 if (amountOfDroids == null) {
     console.log('Отменено пользователем!');
-} else {
-    totalPrice = amountOfDroids * pricePerDroid;
 }
 
 if (totalPrice > credits) {
